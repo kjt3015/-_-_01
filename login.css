@@ -1,0 +1,55 @@
+#login_section{
+    /* border: 1px solid black; */
+    width: 310px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+li{
+    list-style: none;
+    padding: 0 0 12px;
+}
+
+li input{
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+ul{
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+h2{
+    font-size: 32px;
+    border-bottom: 2px solid black;
+    margin: 0px;
+    text-align: center;
+}
+
+button{
+    width: 100%;
+    height: 60px;
+    background: rgb(73, 109, 137);
+    font-size: 18px;
+    color: aliceblue;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* #img_login{
+    position: static;
+    margin: 5px;
+    border: 2px solid black;
+    height: 50%;
+    width: 550px;
+} */
+
+/* transform: translate(-50%, -50%) 자기 자신의 크기 기준으로 -50% 이동 */
