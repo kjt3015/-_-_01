@@ -1,12 +1,33 @@
-body{
-    height: 70vh;
-    background-color: rgb(41, 79, 109);
-}
+/* 웹페이지 디자인 색상 추천 사이트 https://paletton.com/#uid=13x0u0kllllaFw0g0qFqFg0w0aF */
+
 /* mainBox를 반응형으로 만들고자 하여 height를 % 값으로 설정하고 싶었지만
 mainBox의 부모태그인 body태그의 크기를 기준으로 % 값이기 때문에 원하는 대로
 화면에 꽉차는 느낌의 반응형 div태그가 만들어 지지 않았기 때문에 body태그를
 화면전체를 기준으로 하는 단위인 "vw", "vh"를 이용해 화면에 맞게 크기 조절이
 되도록 했다. */
+
+body{
+    height: 70vh;
+    background-color: rgb(41, 79, 109);
+}
+
+/* 메인박스 */
+#mainBox{
+    /* 요소의 크기와 위치조정 */
+    height: 80%;
+    width: 70%;
+
+    margin: 10%;
+
+    /* 요소의 배경색과 그림자, 테두리 조정 */
+    background-color: rgb(73, 109, 137);
+    box-shadow: 10px 10px 10px rgb(46, 45, 45);
+
+    border: 3px solid black;
+    border-radius: 30px;
+}
+
+/* 그리드 */
 #grid{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -20,17 +41,36 @@ mainBox의 부모태그인 body태그의 크기를 기준으로 % 값이기 때�
     border-radius: 30px;
 }
 
-#mainBox{
-    /* 요소의 크기와 위치조정 */
-    height: 80%;
-    width: 70%;
+@media(max-width: 1300px){
+    #grid{
+        display: block;
+    }
+    #gone{
+        display: none;
+    }
+    #mainBox{
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+        box-sizing: border-box;
 
-    margin: 15%;
-
-    /* 요소의 배경색과 그림자, 테두리 조정 */
-    background-color: rgb(73, 109, 137);
-    box-shadow: 10px 10px 10px rgb(46, 45, 45);
-
-    border: 3px solid black;
-    border-radius: 30px;
+        background-color: rgb(73, 109, 137);
+        box-shadow: 10px 10px 10px rgb(46, 45, 45);
+    
+        border: 3px solid black;
+        border-radius: 30px;
+    }
+    .grid_element{
+        background-color: rgb(113, 142, 164);
+        margin: 10px;
+        border: 2px solid black;
+        border-radius: 30px;
+        height: 90%;
+    }
+    body{
+        height: 100vh;
+    }
+    .board_list_section{
+        padding: 0px;
+    }
 }
